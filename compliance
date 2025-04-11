@@ -1,0 +1,56 @@
+Project Overview
+Goal: Ensure third-party (3P) products meet required energy labeling compliance standards, and create a workflow for product reinstatement in case of non-compliance.
+
+📁 GitHub Project Structure
+css
+Copy
+Edit
+3p-energy-labeling-compliance/
+│
+├── README.md
+├── docs/
+│   ├── flowcharts/
+│   │   ├── energy_labeling_flow.png
+│   │   ├── reinstatement_flow.png
+│   │   └── end_to_end_workflow.png
+│   └── compliance_standards.md
+│
+├── src/
+│   ├── validation/
+│   │   └── energy_label_checker.py
+│   ├── reinstatement/
+│   │   └── reinstatement_workflow.py
+│   └── utils/
+│       └── data_loader.py
+│
+├── tests/
+│   └── test_energy_label_checker.py
+│
+├── requirements.txt
+└── .gitignore
+🔁 Flowcharts to Be Generated
+Energy Labeling Validation Flow
+
+Input: Product listing + documentation
+
+Check for region compliance (EU, US, etc.)
+
+Validate energy label file format
+
+Output: Approved / Flagged for Reinstatement
+
+3P Reinstatement Workflow
+
+Trigger: Product flagged
+
+Notify 3P seller
+
+Upload valid documentation
+
+Re-check compliance
+
+Reinstate product if passed
+
+End-to-End Compliance Process
+
+From listing → validation → compliance check → escalation → reinstatement → live on catalog
